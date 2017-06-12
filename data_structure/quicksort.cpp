@@ -30,7 +30,7 @@ void quicksort(int* arr, int beg, int end){
 	// pivot position is changeable, must keep this
 	arr[low] = pivot;
 
-	quicksort(arr, beg, low);
+	quicksort(arr, beg, low-1);//keep subtract one number
 	quicksort(arr, low+1, end);
 
 
